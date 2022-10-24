@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
-    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mt-2" *ngFor="let news of allNews">
-      <div class="card w-100" style="height: 22rem;" >
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mt-3 mb-3" *ngFor="let news of allNews">
+      <div class="card w-100" style="height: 25rem;" >
         <img src="{{news.urlToImage ? news.urlToImage : 'assets/news_mania.jpeg'}}" class="card-img-top" alt="{{news.author}}" height="200" width="200">
         <div class="card-body">
           <a href="{{news.url}}">

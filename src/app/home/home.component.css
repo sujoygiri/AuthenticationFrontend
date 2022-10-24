@@ -1,0 +1,11 @@
+.card{
+    background-color: #061532;
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+a:hover{
+    color: rgb(17, 206, 212);
+    /* text-shadow: 0 0 5px rgba(119, 234, 238,1); */
+}

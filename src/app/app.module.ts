@@ -10,6 +10,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 
 import {GlobalService} from "./global.service";
 import {HttpClientModule} from "@angular/common/http";
+import { AuthService } from './auth/auth.service';
+import { AuthGuard } from './auth/auth.guard';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import {HttpClientModule} from "@angular/common/http";
     AppRoutingModule
   ],
   providers: [
-    GlobalService
+    GlobalService,
+    AuthService,
+    AuthGuard
   ],
   bootstrap: [AppComponent]
 })
